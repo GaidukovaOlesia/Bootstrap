@@ -1,5 +1,23 @@
-.item {
-  max-width: 300px;
-  margin: auto; }
+.image {
+  height: 100vh;
+  background-size: cover; }
+
+.image.item-1 {
+  background-image: url("../images/image_1.jpg"); }
+
+.image.item-2 {
+  background-image: url("../images/image_2.jpg"); }
+
+.image.item-3 {
+  background-image: url("../images/image_3.jpg"); }
+
+.image.item-4 {
+  background-image: url("../images/image_1.jpg"); }
+
+.image.item-5 {
+  background-image: url("../images/image_2.jpg"); }
+
+.image.item-6 {
+  background-image: url("../images/image_3.jpg"); }
 
 /*# sourceMappingURL=styles_preproc.css.map */
