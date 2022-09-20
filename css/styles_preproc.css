@@ -45,6 +45,10 @@ header {
     font-size: 15px;
     line-height: 19px;
     color: #FFFFFF; }
+    @media screen and (max-width: 575px) {
+      header nav p {
+        font-size: 12px;
+        line-height: 13px; } }
   header nav ul li a {
     font-family: '20 Kopeek';
     font-style: normal;
@@ -54,20 +58,39 @@ header {
     color: #FFFFFF !important; }
   header nav ul li:first-of-type {
     border: 1px solid #FFFFFF;
-    border-radius: 15px;
+    border-radius: 43px;
     margin-right: 13px;
-    padding: 7px 27px 7px 33px; }
+    padding: 14px 15px 0 12px; }
+    @media screen and (max-width: 991px) {
+      header nav ul li:first-of-type {
+        border-radius: 25px; } }
   header nav ul li:nth-child(2) {
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     margin-left: 12px;
     margin-right: 13px;
-    padding: 12px 15px; }
+    padding: 8px 20px;
+    height: 62px;
+    width: 62px; }
+    @media screen and (max-width: 991px) {
+      header nav ul li:nth-child(2) {
+        width: 50px;
+        height: 50px;
+        padding: 3px 20px;
+        margin: 0; } }
   header nav ul li:last-of-type {
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     margin-left: 12px;
-    padding: 12px; }
+    padding: 9px 14px;
+    height: 62px;
+    width: 62px; }
+    @media screen and (max-width: 991px) {
+      header nav ul li:last-of-type {
+        margin: 0;
+        padding: 3px 15px;
+        width: 50px;
+        height: 50px; } }
 
 @media screen and (max-width: 992px) {
   .banner {
@@ -133,9 +156,9 @@ header {
     @media screen and (max-width: 992px) {
       .banner a:first-of-type {
         display: block;
-        width: 250px;
+        width: 325px;
         margin-right: 0;
-        margin-bottom: 42px !important; } }
+        margin-bottom: 42px; } }
     @media screen and (max-width: 768px) {
       .banner a:first-of-type {
         display: inline-block;
@@ -145,13 +168,14 @@ header {
     @media screen and (max-width: 576px) {
       .banner a:first-of-type {
         margin-right: 0;
-        margin-bottom: 20px !important; } }
+        margin-bottom: 0;
+        order: 2; } }
   .banner a:last-of-type {
     margin-left: 10px; }
     @media screen and (max-width: 992px) {
       .banner a:last-of-type {
         display: block;
-        width: 250px;
+        width: 325px;
         margin-left: 0; } }
     @media screen and (max-width: 768px) {
       .banner a:last-of-type {
@@ -160,7 +184,9 @@ header {
         margin-left: 18px; } }
     @media screen and (max-width: 576px) {
       .banner a:last-of-type {
-        margin-left: 0; } }
+        margin-left: 0;
+        order: 1;
+        margin-bottom: 20px; } }
 
 .description {
   position: absolute;
@@ -169,6 +195,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
+  .description .d-flex.but {
+    flex-wrap: wrap; }
 
 .firm-style h3 {
   font-family: '20 Kopeek Book';
@@ -292,10 +320,6 @@ header {
 
 .amperia {
   margin-bottom: 100px; }
-  @media screen and (max-width: 767px) {
-    .amperia {
-      display: flex;
-      justify-content: space-between; } }
   .amperia img {
     margin-bottom: 45px; }
   .amperia h3 {
@@ -309,7 +333,7 @@ header {
     @media screen and (max-width: 992px) {
       .amperia h3 {
         font-size: 45px; } }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 767px) {
       .amperia h3 {
         font-size: 35px; } }
   .amperia a {
@@ -320,14 +344,30 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
+    color: #181818;
+    padding: 23px 47px; }
+    @media screen and (max-width: 1199px) {
+      .amperia a {
+        padding: 17px 47px; } }
+    @media screen and (max-width: 575px) {
+      .amperia a {
+        padding: 12px 47px; } }
+  .amperia p {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
     color: #181818; }
+    @media screen and (max-width: 992px) {
+      .amperia p {
+        font-size: 16px; } }
+    @media screen and (max-width: 576px) {
+      .amperia p {
+        font-size: 15px; } }
 
 .AQ {
   margin-bottom: 100px; }
-  @media screen and (max-width: 767px) {
-    .AQ {
-      display: flex;
-      justify-content: space-between; } }
   .AQ img {
     margin-bottom: 45px; }
   .AQ h3 {
@@ -341,7 +381,7 @@ header {
     @media screen and (max-width: 992px) {
       .AQ h3 {
         font-size: 45px; } }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 767px) {
       .AQ h3 {
         font-size: 35px; } }
   .AQ a {
@@ -352,36 +392,30 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
+    color: #181818;
+    padding: 23px 47px; }
+    @media screen and (max-width: 1199px) {
+      .AQ a {
+        padding: 17px 47px; } }
+    @media screen and (max-width: 575px) {
+      .AQ a {
+        padding: 12px 47px; } }
+  .AQ p {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
     color: #181818; }
-
-.brend {
-  font-family: '20 Kopeek';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  color: #181818; }
-  @media screen and (max-width: 992px) {
-    .brend {
-      font-size: 16px; } }
-  @media screen and (max-width: 576px) {
-    .brend {
-      font-size: 15px; } }
-
-.button {
-  padding-left: 30px;
-  padding-right: 30px; }
-  @media screen and (max-width: 768px) {
-    .button {
-      padding-right: 25px;
-      padding-left: 25px; } }
+    @media screen and (max-width: 992px) {
+      .AQ p {
+        font-size: 16px; } }
+    @media screen and (max-width: 576px) {
+      .AQ p {
+        font-size: 15px; } }
 
 .vilata {
   margin-bottom: 100px; }
-  @media screen and (max-width: 767px) {
-    .vilata {
-      display: flex;
-      justify-content: space-between; } }
   .vilata img {
     margin-bottom: 45px; }
   .vilata h3 {
@@ -395,7 +429,7 @@ header {
     @media screen and (max-width: 992px) {
       .vilata h3 {
         font-size: 45px; } }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 767px) {
       .vilata h3 {
         font-size: 35px; } }
   .vilata a {
@@ -406,14 +440,30 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
+    color: #181818;
+    padding: 23px 47px; }
+    @media screen and (max-width: 1199px) {
+      .vilata a {
+        padding: 17px 47px; } }
+    @media screen and (max-width: 575px) {
+      .vilata a {
+        padding: 12px 47px; } }
+  .vilata p {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
     color: #181818; }
+    @media screen and (max-width: 992px) {
+      .vilata p {
+        font-size: 16px; } }
+    @media screen and (max-width: 576px) {
+      .vilata p {
+        font-size: 15px; } }
 
 .coral {
   margin-bottom: 100px; }
-  @media screen and (max-width: 767px) {
-    .coral {
-      display: flex;
-      justify-content: space-between; } }
   .coral img {
     margin-bottom: 45px; }
   .coral h3 {
@@ -427,7 +477,7 @@ header {
     @media screen and (max-width: 992px) {
       .coral h3 {
         font-size: 45px; } }
-    @media screen and (max-width: 576px) {
+    @media screen and (max-width: 767px) {
       .coral h3 {
         font-size: 35px; } }
   .coral a {
@@ -438,13 +488,33 @@ header {
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
-    color: #181818; }
+    color: #181818;
+    padding: 23px 47px; }
     .coral a:first-of-type {
       margin-bottom: 100px; }
+    @media screen and (max-width: 1199px) {
+      .coral a {
+        padding: 17px 47px; } }
+    @media screen and (max-width: 575px) {
+      .coral a {
+        padding: 12px 47px; } }
   .coral p {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818;
     margin-bottom: 53px; }
+    @media screen and (max-width: 992px) {
+      .coral p {
+        font-size: 16px; } }
+    @media screen and (max-width: 575px) {
+      .coral p {
+        font-size: 15px;
+        margin-bottom: 20px; } }
 
-.button1 {
+.coral .button1 {
   background: #2B59C3;
   border-radius: 40px;
   padding: 23px 47px;
@@ -455,45 +525,52 @@ header {
   line-height: 110%;
   color: #FFFFFF;
   margin-bottom: 100px; }
-  @media screen and (max-width: 768px) {
-    .button1 {
-      padding-right: 25px;
-      padding-left: 25px; } }
+  @media screen and (max-width: 1199px) {
+    .coral .button1 {
+      font-family: '20 Kopeek Book';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 110%;
+      color: #FFFFFF;
+      padding: 19px 44px; } }
 
-.gaide-line h3 {
-  font-family: '20 Kopeek Book';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 38px;
-  line-height: 110%;
-  color: #181818; }
-.gaide-line h4 {
-  font-family: '20 Kopeek Book';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 110%;
-  color: #FFFFFF;
-  background: #2B59C3;
-  border-radius: 5px; }
-.gaide-line p:first-of-type {
-  font-family: '20 Kopeek Book';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  color: #FFFFFF;
-  background: #2B59C3;
-  border-radius: 5px;
-  margin-top: 57px;
-  margin-bottom: 30px; }
-.gaide-line p:last-of-type {
-  font-family: '20 Kopeek';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  color: #181818; }
+.gaide-line {
+  margin-bottom: 77px; }
+  .gaide-line h3 {
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 110%;
+    color: #181818; }
+  .gaide-line h4 {
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 110%;
+    color: #FFFFFF;
+    background: #2B59C3;
+    border-radius: 5px; }
+  .gaide-line p:first-of-type {
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    background: #2B59C3;
+    border-radius: 5px;
+    margin-top: 57px;
+    margin-bottom: 30px; }
+  .gaide-line p:last-of-type {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818; }
 
 .gaide {
   font-family: '20 Kopeek Book';
@@ -505,61 +582,163 @@ header {
   margin-bottom: 30px;
   display: block; }
 
-.freelans {
-  padding: 150px 0; }
-  .freelans .row .col-lg-2 {
-    background-color: #2B59C3; }
-  .freelans .row .col-lg-3:nth-child(2) {
-    padding-left: 30px;
-    position: relative; }
-    .freelans .row .col-lg-3:nth-child(2):after {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 5px;
-      background-color: white;
-      position: absolute;
-      bottom: -2px;
-      left: 0; }
-  .freelans .row .col-lg-3:nth-child(3) {
-    border: 4px solid #2B59C3;
-    border-top: none;
-    border-bottom: 0.5px solid #868686; }
-  .freelans .row:first-of-type .col-lg-3, .freelans .row:first-of-type .col-lg-4 {
-    border-bottom: none; }
-  .freelans .row:first-of-type .col-lg-2 {
-    border-radius: 10px 10px 0 0; }
-  .freelans .row:first-of-type .col-lg-3:nth-child(3) {
-    border-radius: 10px 10px 0 0;
-    border-top: 4px solid #2B59C3; }
-  .freelans .row:last-of-type .col-lg-3, .freelans .row:last-of-type .col-lg-4 {
-    border-bottom: none; }
-  .freelans .row:last-of-type .col-lg-2 {
-    border-radius: 0 0 10px 10px; }
-  .freelans .row:last-of-type .col-lg-3:nth-child(3) {
-    border-radius: 0 0 10px 10px;
-    border-bottom: 4px solid #2B59C3; }
-  .freelans .row .col-lg-3, .freelans .row .col-lg-4 {
-    border-bottom: 0.5px solid #868686; }
-  .freelans h4 {
+.freelans .row .col-lg-2 {
+  background-color: #2B59C3; }
+.freelans .row .col-lg-3:nth-child(2) {
+  padding-left: 30px;
+  position: relative; }
+  .freelans .row .col-lg-3:nth-child(2):after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    bottom: -2px;
+    left: 0; }
+.freelans .row .col-lg-3:nth-child(3) {
+  border: 4px solid #2B59C3;
+  border-top: none;
+  border-bottom: 0.5px solid #868686; }
+.freelans .row:first-of-type .col-lg-3, .freelans .row:first-of-type .col-lg-4 {
+  border-bottom: none; }
+.freelans .row:first-of-type .col-lg-2 {
+  border-radius: 10px 10px 0 0; }
+.freelans .row:first-of-type .col-lg-3:nth-child(3) {
+  border-radius: 10px 10px 0 0;
+  border-top: 4px solid #2B59C3; }
+.freelans .row:last-of-type .col-lg-3, .freelans .row:last-of-type .col-lg-4 {
+  border-bottom: none; }
+.freelans .row:last-of-type .col-lg-2 {
+  border-radius: 0 0 10px 10px; }
+.freelans .row:last-of-type .col-lg-3:nth-child(3) {
+  border-radius: 0 0 10px 10px;
+  border-bottom: 4px solid #2B59C3; }
+.freelans .row .col-lg-3, .freelans .row .col-lg-4 {
+  border-bottom: 0.5px solid #868686; }
+.freelans h4 {
+  font-family: '20 Kopeek Book';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 110%;
+  color: #868686; }
+.freelans p {
+  margin-bottom: 30px;
+  padding-top: 26px; }
+.freelans h5 {
+  padding-top: 26px;
+  font-family: '20 Kopeek Book';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 110%;
+  color: #FFFFFF; }
+.freelans .free-color {
+  color: #2B59C3; }
+
+.form {
+  margin-bottom: 150px; }
+  .form h4 {
     font-family: '20 Kopeek Book';
     font-style: normal;
     font-weight: 400;
     font-size: 38px;
     line-height: 110%;
-    color: #868686; }
-  .freelans p {
-    margin-bottom: 30px;
-    padding-top: 26px; }
-  .freelans h5 {
-    padding-top: 26px;
+    color: #181818; }
+  .form h5 {
     font-family: '20 Kopeek Book';
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
     line-height: 110%;
-    color: #FFFFFF; }
-  .freelans .free-color {
-    color: #2B59C3; }
+    color: #181818;
+    margin-bottom: 27px; }
+  .form span {
+    color: #005cbf; }
+  .form .form-check-label {
+    margin-left: 20px; }
+  .form button {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    border-radius: 40px; }
+
+input[type="checkbox"] {
+  margin-left: 0; }
+
+input::placeholder {
+  font-family: '20 Kopeek';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #868686; }
+
+.stage-create {
+  margin-bottom: 150px; }
+  .stage-create h3 {
+    margin-bottom: 87px;
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100%;
+    color: #181818; }
+    @media screen and (max-width: 768px) {
+      .stage-create h3 {
+        margin-bottom: 40px; } }
+  .stage-create img {
+    margin-bottom: 26px; }
+  .stage-create h4 {
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 110%;
+    display: flex;
+    align-items: flex-end;
+    color: #181818; }
+    @media screen and (max-width: 768px) {
+      .stage-create h4 {
+        margin-bottom: 18px; } }
+    @media screen and (max-width: 575px) {
+      .stage-create h4 {
+        margin-bottom: 40px; } }
+  .stage-create h5 {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818;
+    margin-bottom: 15px; }
+    @media screen and (max-width: 768px) {
+      .stage-create h5 {
+        margin-bottom: 18px; } }
+    @media screen and (max-width: 575px) {
+      .stage-create h5 {
+        margin-bottom: 20px; } }
+  .stage-create p {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #181818;
+    margin-bottom: 60px; }
+    @media screen and (max-width: 768px) {
+      .stage-create p {
+        margin-bottom: 50px; }
+        .stage-create p:last-of-type {
+          margin-bottom: 0; } }
+    @media screen and (max-width: 575px) {
+      .stage-create p {
+        margin-bottom: 26px; }
+        .stage-create p:last-of-type {
+          margin-bottom: 65px; } }
 
 /*# sourceMappingURL=styles_preproc.css.map */

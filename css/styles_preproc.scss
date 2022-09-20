@@ -80,6 +80,10 @@ header {
       font-size: 15px;
       line-height: 19px;
       color: #FFFFFF;
+      @include max-screen(575px){
+        font-size: 12px;
+        line-height: 13px;
+      }
     }
 
     ul {
@@ -95,9 +99,12 @@ header {
 
         &:first-of-type {
           border: 1px solid #FFFFFF;
-          border-radius: 15px;
+          border-radius: 43px;
           margin-right: 13px;
-          padding: 7px 27px 7px 33px;
+          padding: 14px 15px 0 12px;
+          @include max-screen(991px){
+            border-radius: 25px;
+          }
         }
 
         &:nth-child(2) {
@@ -105,14 +112,30 @@ header {
           border-radius: 50%;
           margin-left: 12px;
           margin-right: 13px;
-          padding: 12px 15px;
+          padding: 8px 20px;
+          height: 62px;
+          width: 62px;
+          @include max-screen(991px){
+            width: 50px;
+            height: 50px;
+            padding: 3px 20px;
+            margin: 0;
+          }
         }
 
         &:last-of-type {
           border: 1px solid #FFFFFF;
           border-radius: 50%;
           margin-left: 12px;
-          padding: 12px;
+          padding: 9px 14px;
+          height: 62px;
+          width: 62px;
+          @include max-screen(991px){
+            margin: 0;
+            padding: 3px 15px;
+            width: 50px;
+            height: 50px;
+          }
         }
       }
     }
@@ -188,9 +211,10 @@ header {
       margin-right: 10px;
       @include max-screen(992px){
         display: block;
-        width: 250px;
+        width: 325px;
         margin-right: 0;
-        margin-bottom: 42px!important;
+        margin-bottom: 42px;
+
       }
       @include max-screen(768px){
         display: inline-block;
@@ -200,7 +224,8 @@ header {
       }
       @include max-screen(576px){
         margin-right: 0;
-        margin-bottom: 20px!important;
+        margin-bottom: 0;
+        order: 2;
       }
     }
 
@@ -208,7 +233,7 @@ header {
       margin-left: 10px;
       @include max-screen(992px){
         display: block;
-        width: 250px;
+        width: 325px;
         margin-left: 0;
       }
       @include max-screen(768px){
@@ -218,6 +243,8 @@ header {
       }
       @include max-screen(576px){
         margin-left: 0;
+        order: 1;
+        margin-bottom: 20px;
       }
     }
   }
@@ -230,11 +257,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
+  .d-flex.but{
+    flex-wrap: wrap;
   }
-
-
-
+  }
 
 .firm-style{
   h3{
@@ -374,10 +400,6 @@ header {
 
 .amperia {
   margin-bottom: 100px;
-  @include max-screen(767px){
-  display: flex;
-  justify-content: space-between;
-}
   img {
     margin-bottom: 45px;
   }
@@ -392,7 +414,7 @@ header {
     @include max-screen(992px) {
       font-size: 45px;
     }
-    @include max-screen(576px) {
+    @include max-screen(767px) {
       font-size: 35px;
     }
   }
@@ -405,14 +427,32 @@ header {
     font-size: 18px;
     line-height: 140%;
     color: #181818;
+    padding: 23px 47px;
+    @include max-screen(1199px){
+      padding: 17px 47px;
+    }
+    @include max-screen(575px){
+      padding: 12px 47px;
+    }
   }
-}
+  p{
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818;
+    @include max-screen(992px){
+      font-size: 16px;
+    }
+    @include max-screen(576px){
+      font-size: 15px;
+    }
+  }
+  }
+
 .AQ {
   margin-bottom: 100px;
-  @include max-screen(767px){
-    display: flex;
-    justify-content: space-between;
-  }
   img {
     margin-bottom: 45px;
   }
@@ -427,7 +467,7 @@ header {
     @include max-screen(992px){
       font-size: 45px;
     }
-    @include max-screen(576px){
+    @include max-screen(767px){
       font-size: 35px;
     }
   }
@@ -440,39 +480,37 @@ header {
     font-size: 18px;
     line-height: 140%;
     color: #181818;
+    padding: 23px 47px;
+    @include max-screen(1199px){
+      padding: 17px 47px;
+    }
+    @include max-screen(575px){
+      padding: 12px 47px;
+    }
+  }
+  p{
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818;
+    @include max-screen(992px){
+      font-size: 16px;
+    }
+    @include max-screen(576px){
+      font-size: 15px;
+    }
   }
 }
-.brend {
-  font-family: '20 Kopeek';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 140%;
-  color: #181818;
-  @include max-screen(992px){
-    font-size: 16px;
-  }
-  @include max-screen(576px){
-    font-size: 15px;
-  }
-}
-.button{
-  padding-left: 30px;
-  padding-right: 30px;
-  @include max-screen(768px){
-    padding-right: 25px;
-    padding-left: 25px;
-  }
-}
+
 .vilata {
   margin-bottom: 100px;
-  @include max-screen(767px){
-    display: flex;
-    justify-content: space-between;
-  }
+
   img {
     margin-bottom: 45px;
   }
+
   h3 {
     font-family: '20 Kopeek Book';
     font-style: normal;
@@ -481,13 +519,14 @@ header {
     line-height: 100%;
     color: #181818;
     margin-bottom: 3px;
-    @include max-screen(992px){
+    @include max-screen(992px) {
       font-size: 45px;
     }
-    @include max-screen(576px){
+    @include max-screen(767px) {
       font-size: 35px;
     }
   }
+
   a {
     border: 1px solid #181818;
     border-radius: 40px;
@@ -497,14 +536,32 @@ header {
     font-size: 18px;
     line-height: 140%;
     color: #181818;
+    padding: 23px 47px;
+    @include max-screen(1199px) {
+      padding: 17px 47px;
+    }
+    @include max-screen(575px) {
+      padding: 12px 47px;
+    }
+  }
+
+  p {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818;
+    @include max-screen(992px) {
+      font-size: 16px;
+    }
+    @include max-screen(576px) {
+      font-size: 15px;
+    }
   }
 }
 .coral {
   margin-bottom: 100px;
-  @include max-screen(767px){
-    display: flex;
-    justify-content: space-between;
-  }
   img {
     margin-bottom: 45px;
   }
@@ -519,7 +576,7 @@ header {
     @include max-screen(992px) {
       font-size: 45px;
     }
-    @include max-screen(576px) {
+    @include max-screen(767px){
       font-size: 35px;
     }
   }
@@ -532,15 +589,35 @@ header {
     font-size: 18px;
     line-height: 140%;
     color: #181818;
+    padding: 23px 47px;
     &:first-of-type{
       margin-bottom: 100px;
     }
+    @include max-screen(1199px) {
+      padding: 17px 47px;
+    }
+    @include max-screen(575px) {
+      padding: 12px 47px;
+    }
   }
-  p{
+  p {
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818;
     margin-bottom: 53px;
+    @include max-screen(992px) {
+      font-size: 16px;
+    }
+    @include max-screen(575px) {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
   }
   }
-.button1{
+.coral .button1{
   background: #2B59C3;
   border-radius: 40px;
   padding: 23px 47px;
@@ -551,12 +628,18 @@ header {
   line-height: 110%;
   color: #FFFFFF;
   margin-bottom: 100px;
-  @include max-screen(768px){
-    padding-right: 25px;
-    padding-left: 25px;
+  @include max-screen(1199px){
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+    color: #FFFFFF;
+    padding: 19px 44px;
   }
 }
 .gaide-line{
+  margin-bottom: 77px;
   h3{
     font-family: '20 Kopeek Book';
     font-style: normal;
@@ -608,7 +691,6 @@ header {
   display: block;
 }
 .freelans{
-  padding: 150px 0;
   .row {
     .col-lg-2 {
       background-color: #2B59C3;
@@ -703,7 +785,122 @@ header {
     color: #2B59C3;
   }
 }
+.form{
+  margin-bottom: 150px;
+  h4{
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 110%;
+    color: #181818;
+  }
+  h5{
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 110%;
+    color: #181818;
+    margin-bottom: 27px;
+  }
+  span{
+    color: #005cbf;
+  }
+  .form-check-label{
+    margin-left: 20px;
+  }
+  button{
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    border-radius: 40px;
+  }
+}
+input[type="checkbox"]{
+  margin-left: 0;
+}
+input::placeholder{
+  font-family: '20 Kopeek';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #868686;
+}
+.stage-create{
+  margin-bottom: 150px;
+  h3{
+    margin-bottom: 87px;
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 100%;
+    color: #181818;
+    @include max-screen(768px){
+      margin-bottom: 40px;
+    }
 
+  }
+  img{
+    margin-bottom: 26px;
+  }
+  h4{
+    font-family: '20 Kopeek Book';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 110%;
+    display: flex;
+    align-items: flex-end;
+    color: #181818;
+    @include max-screen(768px){
+      margin-bottom: 18px;
+    }
+    @include max-screen(575px){
+      margin-bottom: 40px;
+    }
+  }
+  h5{
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #181818;
+    margin-bottom: 15px;
+    @include max-screen(768px){
+      margin-bottom: 18px;
+    }
+    @include max-screen(575px){
+      margin-bottom: 20px;
+    }
+  }
+  p{
+    font-family: '20 Kopeek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #181818;
+    margin-bottom: 60px;
+    @include max-screen(768px){
+      margin-bottom: 50px;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
+    }
+    @include max-screen(575px){
+      margin-bottom: 26px;
+      &:last-of-type{
+        margin-bottom: 65px;
+      }
+    }
 
-
+  }
+}
 
