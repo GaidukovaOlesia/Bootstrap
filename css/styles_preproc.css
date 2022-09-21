@@ -39,7 +39,7 @@
 header {
   z-index: 3; }
   header nav p {
-    font-family: '20 Kopeek', sans-serif;
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -50,7 +50,7 @@ header {
         font-size: 12px;
         line-height: 13px; } }
   header nav ul li a {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -127,34 +127,38 @@ header {
     height: 100vh;
     position: relative; } }
 .banner h1 {
-  font-family: '20 Kopeek Book', sans-serif;
+  font-family: "20 Kopeek Book", sans-serif;
   font-size: 55px;
   line-height: 100%;
   color: #181818;
   margin-bottom: 30px; }
   @media screen and (max-width: 992px) {
     .banner h1 {
-      font-family: '20 Kopeek Book';
+      font-family: "20 Kopeek Book", sans-serif;
       font-size: 45px;
       line-height: 100%;
       color: #FFFFFF; } }
   @media screen and (max-width: 768px) {
     .banner h1 {
-      font-family: '20 Kopeek';
+      font-family: "20 Kopeek", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 30px;
       line-height: 110%;
       color: #FFFFFF; } }
+  @media screen and (max-width: 321px) {
+    .banner h1 {
+      font-size: 20px;
+      margin-bottom: 15px; } }
 .banner h3 {
-  font-family: '20 Kopeek Book', sans-serif;
+  font-family: "20 Kopeek Book", sans-serif;
   font-size: 34px;
   line-height: 110%;
   color: #181818;
   margin-bottom: 65px; }
   @media screen and (max-width: 992px) {
     .banner h3 {
-      font-family: '20 Kopeek';
+      font-family: "20 Kopeek", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 26px;
@@ -162,15 +166,18 @@ header {
       color: #FFFFFF; } }
   @media screen and (max-width: 768px) {
     .banner h3 {
-      font-family: '20 Kopeek';
+      font-family: "20 Kopeek", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 110%;
       color: #FFFFFF;
       margin-bottom: 25px; } }
+  @media screen and (max-width: 321px) {
+    .banner h3 {
+      font-size: 13px; } }
 .banner a {
-  font-family: '20 Kopeek', sans-serif;
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -179,6 +186,10 @@ header {
   background: #FFFFFF;
   border-radius: 40px;
   padding: 23px 47px; }
+  @media screen and (max-width: 321px) {
+    .banner a {
+      font-size: 12px;
+      padding: 15px 40px; } }
   .banner a:first-of-type {
     margin-right: 10px; }
     @media screen and (max-width: 992px) {
@@ -227,7 +238,7 @@ header {
     flex-wrap: wrap; }
 
 .firm-style h3 {
-  font-family: '20 Kopeek Book';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
@@ -243,13 +254,16 @@ header {
 .list-number {
   margin-bottom: 120px; }
   .list-number h2 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 55px;
     line-height: 100%;
     color: #181818;
     margin-bottom: 40px; }
+    @media screen and (max-width: 321px) {
+      .list-number h2 {
+        font-size: 40px; } }
 
 .firm-style {
   margin-bottom: 150px; }
@@ -260,7 +274,7 @@ header {
 .style {
   margin-top: 52px; }
   .style p {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -274,7 +288,7 @@ header {
         font-size: 15px; } }
 
 .number {
-  font-family: '20 Kopeek Book';
+  font-family: "20 Kopeek Book", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 55px;
@@ -282,7 +296,7 @@ header {
   color: #181818; }
 
 .text {
-  font-family: '20 Kopeek';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -291,7 +305,7 @@ header {
   margin-top: 29px; }
 
 .text1 {
-  font-family: '20 Kopeek';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -299,7 +313,7 @@ header {
   color: #181818; }
 
 .text2 {
-  font-family: '20 Kopeek';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -312,7 +326,7 @@ header {
       line-height: 120%; } }
 
 .text3 {
-  font-family: '20 Kopeek';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -326,12 +340,12 @@ header {
 .text4 {
   background: #2B59C3;
   border-radius: 5px;
-  font-family: '20 Kopeek';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: white; }
+  color: #FFFFFF; }
   @media screen and (min-width: 992px) {
     .text4 {
       line-height: 120%; } }
@@ -351,7 +365,7 @@ header {
   .amperia img {
     margin-bottom: 45px; }
   .amperia h3 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 55px;
@@ -367,7 +381,7 @@ header {
   .amperia a {
     border: 1px solid #181818;
     border-radius: 40px;
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -380,8 +394,11 @@ header {
     @media screen and (max-width: 575px) {
       .amperia a {
         padding: 12px 47px; } }
+    @media screen and (max-width: 321px) {
+      .amperia a {
+        font-size: 11px; } }
   .amperia p {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -399,7 +416,7 @@ header {
   .AQ img {
     margin-bottom: 45px; }
   .AQ h3 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 55px;
@@ -415,7 +432,7 @@ header {
   .AQ a {
     border: 1px solid #181818;
     border-radius: 40px;
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -428,13 +445,16 @@ header {
     @media screen and (max-width: 575px) {
       .AQ a {
         padding: 12px 47px; } }
+    @media screen and (max-width: 321px) {
+      .AQ a {
+        font-size: 11px; } }
   .AQ p {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
-    color: #181818; }
+    color: "20 Kopeek", sans-serif; }
     @media screen and (max-width: 992px) {
       .AQ p {
         font-size: 16px; } }
@@ -447,7 +467,7 @@ header {
   .vilata img {
     margin-bottom: 45px; }
   .vilata h3 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 55px;
@@ -463,7 +483,7 @@ header {
   .vilata a {
     border: 1px solid #181818;
     border-radius: 40px;
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -476,8 +496,11 @@ header {
     @media screen and (max-width: 575px) {
       .vilata a {
         padding: 12px 47px; } }
+    @media screen and (max-width: 321px) {
+      .vilata a {
+        font-size: 11px; } }
   .vilata p {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -495,7 +518,7 @@ header {
   .coral img {
     margin-bottom: 45px; }
   .coral h3 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 55px;
@@ -508,10 +531,13 @@ header {
     @media screen and (max-width: 767px) {
       .coral h3 {
         font-size: 35px; } }
+    @media screen and (max-width: 321px) {
+      .coral h3 {
+        font-size: 32px; } }
   .coral a {
     border: 1px solid #181818;
     border-radius: 40px;
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -526,8 +552,11 @@ header {
     @media screen and (max-width: 575px) {
       .coral a {
         padding: 12px 47px; } }
+    @media screen and (max-width: 321px) {
+      .coral a {
+        font-size: 11px; } }
   .coral p {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -546,7 +575,7 @@ header {
   background: #2B59C3;
   border-radius: 40px;
   padding: 23px 47px;
-  font-family: '20 Kopeek Book';
+  font-family: "20 Kopeek Book", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -555,25 +584,28 @@ header {
   margin-bottom: 100px; }
   @media screen and (max-width: 1199px) {
     .coral .button1 {
-      font-family: '20 Kopeek Book';
+      font-family: "20 Kopeek Book", sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 110%;
       color: #FFFFFF;
       padding: 19px 44px; } }
+  @media screen and (max-width: 321px) {
+    .coral .button1 {
+      font-size: 11px; } }
 
 .gaide-line {
   margin-bottom: 77px; }
   .gaide-line h3 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 38px;
     line-height: 110%;
     color: #181818; }
   .gaide-line h4 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -582,7 +614,7 @@ header {
     background: #2B59C3;
     border-radius: 5px; }
   .gaide-line p:first-of-type {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -593,7 +625,7 @@ header {
     margin-top: 57px;
     margin-bottom: 30px; }
   .gaide-line p:last-of-type {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -601,7 +633,7 @@ header {
     color: #181818; }
 
 .gaide {
-  font-family: '20 Kopeek Book';
+  font-family: "20 Kopeek Book", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -625,7 +657,7 @@ header {
       display: block;
       width: 30px;
       height: 5px;
-      background-color: white;
+      background-color: #FFFFFF;
       position: absolute;
       bottom: -2px;
       left: 0; }
@@ -659,7 +691,7 @@ header {
       .freelans .row .col-lg-3, .freelans .row .col-lg-4 {
         border-bottom: none; } }
   .freelans h4 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 38px;
@@ -670,7 +702,7 @@ header {
     padding-top: 26px; }
   .freelans h5 {
     padding-top: 26px;
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -682,14 +714,14 @@ header {
 .form {
   margin-bottom: 150px; }
   .form h4 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 38px;
     line-height: 110%;
     color: #181818; }
   .form h5 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -697,7 +729,7 @@ header {
     color: #181818;
     margin-bottom: 27px; }
   .form .form-check-label {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -716,7 +748,7 @@ header {
     .form .form-control:hover {
       border: 2px solid blue; }
   .form button {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -738,7 +770,7 @@ input[type="checkbox"] {
   margin-left: 0; }
 
 input::placeholder {
-  font-family: '20 Kopeek';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -749,7 +781,7 @@ input::placeholder {
   margin-bottom: 150px; }
   .stage-create h3 {
     margin-bottom: 87px;
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 45px;
@@ -761,7 +793,7 @@ input::placeholder {
   .stage-create img {
     margin-bottom: 26px; }
   .stage-create h4 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -776,7 +808,7 @@ input::placeholder {
       .stage-create h4 {
         margin-bottom: 40px; } }
   .stage-create h5 {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -790,7 +822,7 @@ input::placeholder {
       .stage-create h5 {
         margin-bottom: 20px; } }
   .stage-create p {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -823,7 +855,7 @@ input::placeholder {
       padding-top: 32px;
       padding-bottom: 21px; } }
   .five-advantage h3 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 55px;
@@ -838,7 +870,7 @@ input::placeholder {
       .five-advantage h3 {
         margin-bottom: 40px; } }
   .five-advantage h5 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 55px;
@@ -848,7 +880,7 @@ input::placeholder {
       .five-advantage h5 {
         font-size: 45px; } }
   .five-advantage p {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -863,7 +895,7 @@ input::placeholder {
 .contact {
   margin-bottom: 150px; }
   .contact h4 {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 38px;
@@ -878,7 +910,7 @@ input::placeholder {
   .contact span {
     color: #005cbf; }
   .contact .form-check-label {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -909,7 +941,7 @@ input::placeholder {
       .contact .form-control {
         margin-bottom: 10px; } }
   .contact button {
-    font-family: '20 Kopeek';
+    font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -932,7 +964,7 @@ input::placeholder {
     margin-bottom: 15px;
     margin-left: -25px; }
   .contact ul a {
-    font-family: '20 Kopeek Book';
+    font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -943,19 +975,21 @@ input::placeholder {
       color: #2B59C3; }
 
 footer h4 {
-  font-family: '20 Kopeek Book';
+  font-family: "20 Kopeek Book", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   line-height: 110%;
   color: #181818;
-  margin-bottom: 20px; }
-footer .col-lg-2 {
+  margin-bottom: 20px;
+  padding-left: 15px; }
+footer .background {
   background: #2B59C3;
   border-radius: 10px;
-  height: 100%; }
+  padding: 6px 13px;
+  margin-bottom: 38px; }
 footer p {
-  font-family: '20 Kopeek';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -963,11 +997,16 @@ footer p {
   color: #FFFFFF;
   margin-bottom: 25px; }
 footer a {
-  font-family: '20 Kopeek';
+  font-family: "20 Kopeek", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF; }
+footer .link a {
+  color: #181818; }
+  @media screen and (max-width: 321px) {
+    footer .link a {
+      font-size: 13px; } }
 
 /*# sourceMappingURL=styles_preproc.css.map */
