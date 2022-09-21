@@ -792,6 +792,10 @@ input::placeholder {
         margin-bottom: 40px; } }
   .stage-create img {
     margin-bottom: 26px; }
+    .stage-create img:hover {
+      width: 100px;
+      height: 100px;
+      box-shadow: 10px 10px 5px #7abaff; }
   .stage-create h4 {
     font-family: "20 Kopeek Book", sans-serif;
     font-style: normal;
