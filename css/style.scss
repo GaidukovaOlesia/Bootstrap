@@ -95,32 +95,15 @@ header {
           font-weight: 400;
           font-size: 16px;
           line-height: 22px;
-          color: $white-color!important;
-
-          &:focus {
-            outline: 1px solid blue;
-          }
-
-          &:hover {
-            background: #6c757d;
-            font-size: 20px;
-          }
-
-          @include max-screen(991px) {
-            &:focus {
-              display: none;
-            }
-            &:hover {
-              display: none;
-            }
-          }
+          color: $white-color !important;
         }
+
 
         &:first-of-type {
           border: 1px solid $white-color;
           border-radius: 43px;
           margin-right: 13px;
-          padding: 14px 15px 0 12px;
+          padding: 7px 15px 0 12px;
           @include max-screen(991px) {
             border-radius: 25px;
           }
@@ -132,64 +115,36 @@ header {
           border-radius: 50%;
           margin-left: 12px;
           margin-right: 13px;
-          padding: 8px 20px;
-          height: 62px;
-          width: 62px;
-
-          &:hover {
-            height: 72px;
-            width: 72px;
-            padding: 12px 23px;
-          }
-
+          padding: 2px 12px;
+          height: 50px;
+          width: 50px;
           @include max-screen(991px) {
             width: 50px;
             height: 50px;
             padding: 3px 20px;
             margin: 0;
           }
-          @include max-screen(991px) {
-            &:focus {
-              display: none;
-            }
-            &:hover {
-              display: none;
-            }
-          }
         }
 
-        &:last-of-type {
-          border: 1px solid $white-color;
-          border-radius: 50%;
-          margin-left: 12px;
-          padding: 9px 14px;
-          height: 62px;
-          width: 62px;
 
-          &:hover {
-            height: 72px;
-            width: 72px;
-            padding: 12px 21px;
-          }
-
-          @include max-screen(991px) {
-            margin: 0;
-            padding: 3px 15px;
-            width: 50px;
-            height: 50px;
-          }
-          @include max-screen(991px) {
-            &:focus {
-              display: none;
-            }
-            &:hover {
-              display: none;
-            }
-          }
+      &:last-of-type {
+        border: 1px solid $white-color;
+        border-radius: 50%;
+        margin-left: 12px;
+        padding: 2px 8px;
+        height: 50px;
+        width: 50px;
+        @include max-screen(991px) {
+          margin: 0;
+          padding: 3px 15px;
+          width: 50px;
+          height: 50px;
         }
       }
     }
   }
+}
+
 }
 
 .banner {
@@ -320,6 +275,11 @@ header {
   align-items: center;
   justify-content: flex-start;
 
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .d-flex.but {
     flex-wrap: wrap;
   }
@@ -422,8 +382,9 @@ header {
   font-size: 18px;
   line-height: 140%;
   color: $main-color;
-  margin-top: 37px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 13px;
   @include min-screen(992px) {
     line-height: 120%;
   }
@@ -436,7 +397,8 @@ header {
   font-size: 18px;
   line-height: 140%;
   color: $main-color;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding-left: 13px;
   @include min-screen(992px) {
     line-height: 120%;
   }
@@ -451,6 +413,7 @@ header {
   font-size: 18px;
   line-height: 140%;
   color: $white-color;
+  padding: 11px 7px 11px 13px;
   @include min-screen(992px) {
     line-height: 120%;
   }
@@ -778,7 +741,8 @@ header {
       background: $blue-color;
       border-radius: 5px;
       margin-top: 57px;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+      padding: 11px 39px 18px 14px;
     }
 
     &:last-of-type {
@@ -788,6 +752,7 @@ header {
       font-size: 18px;
       line-height: 140%;
       color: $main-color;
+      padding: 11px 39px 18px 14px;
     }
   }
 }
@@ -799,7 +764,7 @@ header {
   font-size: 26px;
   line-height: 110%;
   color: $white-color;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: block;
 }
 
@@ -970,7 +935,7 @@ header {
     padding-bottom: 23px;
 
     &:hover {
-      border: 2px solid blue;
+      border: 1px solid blue;
     }
   }
 
@@ -983,7 +948,8 @@ header {
     color: $white-color;
     border-radius: 40px;
     padding: 23px 47px;
-    margin-bottom: -20px;
+    margin-top: 10px;
+
     @include max-screen(1199px) {
       padding: 19px 47px;
       font-size: 15px;
@@ -1027,9 +993,8 @@ input::placeholder {
 
   img {
     margin-bottom: 26px;
-    &:hover{
-      width: 100px;
-      height: 100px;
+
+    &:hover {
       box-shadow: 10px 10px 5px #7abaff;
     }
   }
@@ -1112,7 +1077,7 @@ input::placeholder {
     font-weight: 400;
     font-size: 55px;
     line-height: 100%;
-    color:$white-color;
+    color: $white-color;
     margin-bottom: 40px;
     @include max-screen(1199px) {
       margin-bottom: 70px;
@@ -1192,7 +1157,7 @@ input::placeholder {
     padding-left: 29px;
 
     &:hover {
-      border: 2px solid blue;
+      border: 1px solid blue;
     }
 
     @include max-screen(991px) {
@@ -1209,7 +1174,7 @@ input::placeholder {
     padding-left: 29px;
 
     &:hover {
-      border: 2px solid blue;
+      border: 1px solid blue;
     }
 
     @include max-screen(991px) {
@@ -1254,7 +1219,6 @@ input::placeholder {
       color: $main-color;
 
       &:hover {
-        font-size: 28px;
         color: $blue-color;
       }
 

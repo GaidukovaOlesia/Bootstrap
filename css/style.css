@@ -56,21 +56,11 @@ header {
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF !important; }
-    header nav ul li a:focus {
-      outline: 1px solid blue; }
-    header nav ul li a:hover {
-      background: #6c757d;
-      font-size: 20px; }
-    @media screen and (max-width: 991px) {
-      header nav ul li a:focus {
-        display: none; }
-      header nav ul li a:hover {
-        display: none; } }
   header nav ul li:first-of-type {
     border: 1px solid #FFFFFF;
     border-radius: 43px;
     margin-right: 13px;
-    padding: 14px 15px 0 12px; }
+    padding: 7px 15px 0 12px; }
     @media screen and (max-width: 991px) {
       header nav ul li:first-of-type {
         border-radius: 25px; } }
@@ -79,46 +69,28 @@ header {
     border-radius: 50%;
     margin-left: 12px;
     margin-right: 13px;
-    padding: 8px 20px;
-    height: 62px;
-    width: 62px; }
-    header nav ul li:nth-child(2):hover {
-      height: 72px;
-      width: 72px;
-      padding: 12px 23px; }
+    padding: 2px 12px;
+    height: 50px;
+    width: 50px; }
     @media screen and (max-width: 991px) {
       header nav ul li:nth-child(2) {
         width: 50px;
         height: 50px;
         padding: 3px 20px;
         margin: 0; } }
-    @media screen and (max-width: 991px) {
-      header nav ul li:nth-child(2):focus {
-        display: none; }
-      header nav ul li:nth-child(2):hover {
-        display: none; } }
   header nav ul li:last-of-type {
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     margin-left: 12px;
-    padding: 9px 14px;
-    height: 62px;
-    width: 62px; }
-    header nav ul li:last-of-type:hover {
-      height: 72px;
-      width: 72px;
-      padding: 12px 21px; }
+    padding: 2px 8px;
+    height: 50px;
+    width: 50px; }
     @media screen and (max-width: 991px) {
       header nav ul li:last-of-type {
         margin: 0;
         padding: 3px 15px;
         width: 50px;
         height: 50px; } }
-    @media screen and (max-width: 991px) {
-      header nav ul li:last-of-type:focus {
-        display: none; }
-      header nav ul li:last-of-type:hover {
-        display: none; } }
 
 @media screen and (max-width: 992px) {
   .banner {
@@ -234,6 +206,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start; }
+  .description .row {
+    margin-left: 0;
+    margin-right: 0; }
   .description .d-flex.but {
     flex-wrap: wrap; }
 
@@ -319,8 +294,9 @@ header {
   font-size: 18px;
   line-height: 140%;
   color: #181818;
-  margin-top: 37px;
-  margin-bottom: 20px; }
+  margin-top: 50px;
+  margin-bottom: 30px;
+  padding-left: 13px; }
   @media screen and (min-width: 992px) {
     .text2 {
       line-height: 120%; } }
@@ -332,7 +308,8 @@ header {
   font-size: 18px;
   line-height: 140%;
   color: #181818;
-  margin-bottom: 20px; }
+  margin-bottom: 30px;
+  padding-left: 13px; }
   @media screen and (min-width: 992px) {
     .text3 {
       line-height: 120%; } }
@@ -345,7 +322,8 @@ header {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  padding: 11px 7px 11px 13px; }
   @media screen and (min-width: 992px) {
     .text4 {
       line-height: 120%; } }
@@ -623,14 +601,16 @@ header {
     background: #2B59C3;
     border-radius: 5px;
     margin-top: 57px;
-    margin-bottom: 30px; }
+    margin-bottom: 20px;
+    padding: 11px 39px 18px 14px; }
   .gaide-line p:last-of-type {
     font-family: "20 Kopeek", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 140%;
-    color: #181818; }
+    color: #181818;
+    padding: 11px 39px 18px 14px; }
 
 .gaide {
   font-family: "20 Kopeek Book", sans-serif;
@@ -639,7 +619,7 @@ header {
   font-size: 26px;
   line-height: 110%;
   color: #FFFFFF;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: block; }
 
 .freelans {
@@ -746,7 +726,7 @@ header {
     padding-top: 23px;
     padding-bottom: 23px; }
     .form .form-control:hover {
-      border: 2px solid blue; }
+      border: 1px solid blue; }
   .form button {
     font-family: "20 Kopeek", sans-serif;
     font-style: normal;
@@ -756,7 +736,7 @@ header {
     color: #FFFFFF;
     border-radius: 40px;
     padding: 23px 47px;
-    margin-bottom: -20px; }
+    margin-top: 10px; }
     @media screen and (max-width: 1199px) {
       .form button {
         padding: 19px 47px;
@@ -793,8 +773,6 @@ input::placeholder {
   .stage-create img {
     margin-bottom: 26px; }
     .stage-create img:hover {
-      width: 100px;
-      height: 100px;
       box-shadow: 10px 10px 5px #7abaff; }
   .stage-create h4 {
     font-family: "20 Kopeek Book", sans-serif;
@@ -928,7 +906,7 @@ input::placeholder {
     padding-top: 23px;
     padding-left: 29px; }
     .contact .form-check-input:hover {
-      border: 2px solid blue; }
+      border: 1px solid blue; }
     @media screen and (max-width: 991px) {
       .contact .form-check-input {
         margin-bottom: 12px; } }
@@ -940,7 +918,7 @@ input::placeholder {
     padding-top: 23px;
     padding-left: 29px; }
     .contact .form-control:hover {
-      border: 2px solid blue; }
+      border: 1px solid blue; }
     @media screen and (max-width: 991px) {
       .contact .form-control {
         margin-bottom: 10px; } }
@@ -975,7 +953,6 @@ input::placeholder {
     line-height: 110%;
     color: #181818; }
     .contact ul a:hover {
-      font-size: 28px;
       color: #2B59C3; }
 
 footer h4 {
@@ -1013,4 +990,4 @@ footer .link a {
     footer .link a {
       font-size: 13px; } }
 
-/*# sourceMappingURL=styles_preproc.css.map */
+/*# sourceMappingURL=style.css.map */
