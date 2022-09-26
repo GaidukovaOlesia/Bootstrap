@@ -106,6 +106,8 @@ header {
           padding: 7px 15px 0 12px;
           @include max-screen(991px) {
             border-radius: 25px;
+            margin-right: 0;
+            margin-bottom: 10px;
           }
 
         }
@@ -119,10 +121,13 @@ header {
           height: 50px;
           width: 50px;
           @include max-screen(991px) {
-            width: 50px;
+            width: 100%;
             height: 50px;
             padding: 3px 20px;
-            margin: 0;
+            margin-bottom: 10px;
+            border-radius: 25px;
+            margin-right: 0;
+            margin-left: 0;
           }
         }
 
@@ -135,10 +140,11 @@ header {
         height: 50px;
         width: 50px;
         @include max-screen(991px) {
-          margin: 0;
+          margin-left: 0;
           padding: 3px 15px;
-          width: 50px;
+          width: 100%;
           height: 50px;
+          border-radius: 25px;
         }
       }
     }
@@ -219,7 +225,7 @@ header {
     background: $white-color;
     border-radius: 40px;
     padding: 23px 47px;
-    @include max-screen(321px) {
+    @include max-screen(360px) {
       font-size: 12px;
       padding: 15px 40px;
     }
